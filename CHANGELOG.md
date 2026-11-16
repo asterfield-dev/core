@@ -62,6 +62,17 @@ Use this section for changes that are merged but not released yet.
   revoked in the same migration, and `tests/021_touch_person.sql` checks the
   grants, that no presence and no chat are written, that a group player's
   presence is left as it was, and that a new name is still history.
+- Migration `022` prepares the queue for vido 3. `vido.bridge_jobs` and the
+  intents they consume accept groups and vido's own inline mode as surfaces;
+  `bridge_jobs.lease_token` gets a fresh token per claim, so a worker whose
+  lease expired cannot overwrite the job another worker took over;
+  `delivery_operations` learns `animation` and `live_photo`. It also grants
+  what a clean install of vido needs and production already had by hand
+  (`CREATE` on schema `vido`, `REFERENCES` on `core.person` and `core.chat`)
+  and gives the status panel's read-only role the tables vido creates later.
+  The change only adds: vido 2.6 and searchy run unchanged on it, so it goes
+  in before vido 3.0.0, which refuses to start on an older core.
+  `tests/022_vido_3.sql` checks the new columns, values and grants.
 
 **Operators:** set `MAPLY_CORE_PASSWORD` in `.env` before applying `018`, and
 `FRAMY_CORE_PASSWORD` before `019`, or the role exists but cannot log in.
