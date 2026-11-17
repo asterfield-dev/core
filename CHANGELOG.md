@@ -241,7 +241,7 @@ rollback instructions now say what is actually true for a database.
   again, yet CI and the release workflow kept validating it, which is how a dead
   pin reads as a maintained one. The server the bots actually run is built and
   deployed from
-  [FreshLabDev/telegram-bot-api](https://github.com/FreshLabDev/telegram-bot-api).
+  [asterfield-dev/telegram-bot-api](https://github.com/asterfield-dev/telegram-bot-api).
 
 ## v0.2.0-alpha.2 - 2026-08-22
 

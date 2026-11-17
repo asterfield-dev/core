@@ -11,7 +11,7 @@ Please do not open a public issue for a suspected vulnerability or include
 credentials, database dumps, Telegram identifiers, source URLs, tokens, or
 production logs in an issue.
 
-Use GitHub's private vulnerability reporting for `FreshLabDev/core` when it is
+Use GitHub's private vulnerability reporting for `asterfield-dev/core` when it is
 available. If it is not available, contact an Asterfield maintainer privately
 through an existing trusted channel and include only the minimum reproduction
 details needed to investigate.

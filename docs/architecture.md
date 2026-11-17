@@ -115,7 +115,7 @@ behind — which is exactly what happened to the third-party image it replaced,
 still answering Bot API 7.11 in September 2026 and returning `404 method not
 found` for everything shipped since. A bot on the self-hosted server is trading
 newest-API for file size, and
-[FreshLabDev/telegram-bot-api](https://github.com/FreshLabDev/telegram-bot-api)
+[asterfield-dev/telegram-bot-api](https://github.com/asterfield-dev/telegram-bot-api)
 carries a weekly drift check for that reason.
 
 A bot on the self-hosted server must also join `telegram_bot_api_net` and run
